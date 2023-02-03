@@ -5,25 +5,30 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Day1 {
-	
-	
-public static void main(String[] args)  {
-		
+
+
+	public static void main(String[] args)  {
+
 		WebDriver driver;
-		String baseURL = "http://www.demo.guru99.com/V4/";
 		
+		//AUT
+		String baseURL = "https://www.demo.guru99.com/V4/";
+
 		driver = new FirefoxDriver();
 		
+		//Launching browser session
 		driver.get(baseURL);
 		
-		driver.findElement(By.name("uid")).sendKeys("mngr471494");
+		//Locating GUI elements
+        driver.findElement(By.name("uid")).sendKeys("mngr471494");
 		driver.findElement(By.name("password")).sendKeys("yzuqAma");
 		driver.findElement(By.name("btnLogin")).click();
 		
+		//Terminating browser session
 		driver.quit();
-		
-		
-		
+
+
+
 	}
 
 }
