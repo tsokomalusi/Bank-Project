@@ -15,11 +15,15 @@ public class Util {
 	  
 	 */
 	
+	
+	/*
 	public static final String DRIVER_PATH = "C:\\Drivers\\geckodriver.exe";
 
 	public static final String BIN_PATH = "C:\\Program Files\\Mozilla Firefox\\firefox";
 	
 	public static final String FIREFOX_PROFILE_PATH = "C:\\Users\\Asus\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles";
+	*/
+	
 	
 	//setting the Base URL
 	public static final String BASE_URL = "https://www.demo.guru99.com/V4/";
