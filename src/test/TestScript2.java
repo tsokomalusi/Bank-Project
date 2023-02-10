@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
 
-public class TestScript2 {
+public class TestScript2  {
 
 	//selenium control driver
 	static WebDriver driver;
@@ -23,6 +23,7 @@ public class TestScript2 {
 		 * service using firefox*/
 
 		FirefoxOptions options = new FirefoxOptions();
+		
 
 		//creating a profile
 		FirefoxProfile profile = new FirefoxProfile();
@@ -30,7 +31,6 @@ public class TestScript2 {
 		options.setProfile(profile);
 
 		driver = new FirefoxDriver(options);
-
 
 		baseURL = Util.BASE_URL;
 
@@ -50,20 +50,20 @@ public class TestScript2 {
 		driver.findElement(By.name("uid")).clear();
 
 		//Entering username
-		driver.findElement(By.name("uid")).sendKeys(Util.USERNAME);
+		driver.findElement(By.name("uid")).sendKeys(Util.USER_NAME);
 
 		//clearing password field
 		driver.findElement(By.name("password")).clear();
 
 		//Entering password
-		driver.findElement(By.name("password")).sendKeys(Util.PASSWORD);
+		driver.findElement(By.name("password")).sendKeys(Util.PASSWD);
 
 		//click login
 		driver.findElement(By.name("btnLogin")).click();
 
 		actualTitle = driver.getTitle();
 
-		if(actualTitle.contains(Util.EXPECTED_TITLE)) {
+		if(actualTitle.contains(Util.EXPECT_TITLE)) {
 
 			System.out.println("Test Case: Passed!");
 		}

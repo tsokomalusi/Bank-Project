@@ -1,43 +1,66 @@
 package test;
 
+import java.io.File;
+import java.io.FileInputStream;
 
-/*
- * class for parameters needed for the script
- * and are changeable to suite the environment (code maintainance)
- */
+import java.io.IOException;
 
-public class Util {
-	
-	/*
-	 * 
-	 * path of the firefox, firefox and geckodriver 
-	   based on the environment can be changed here
-	  
-	 */
-	
-	
-	/*
-	public static final String DRIVER_PATH = "C:\\Drivers\\geckodriver.exe";
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-	public static final String BIN_PATH = "C:\\Program Files\\Mozilla Firefox\\firefox";
-	
-	public static final String FIREFOX_PROFILE_PATH = "C:\\Users\\Asus\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles";
-	*/
-	
-	
-	//setting the Base URL
-	public static final String BASE_URL = "https://www.demo.guru99.com/V4/";
-	
-	//Time to wait when searching for a GUI element
+public  class Util {
+
+	//public static final String FILE_PATH = "data.xlsx";
+	public static final String SHEET_NAME = "Sheet1"; 
 	public static final int WAIT_TIME = 30;
+	public static final String BASE_URL = "http://www.demo.guru99.com/v4/";
+	public static final String EXPECT_TITLE = "Guru99 Bank Manager HomePage";
+	public static final String EXPECT_ERROR = "User or Password is not valid";
+
+	// Valid account for login
+	public static final String USER_NAME = "mngr476324";
+	public static final String PASSWD = "supYsYb";
 	
-	//Valid account for login
-	public static final String USERNAME= "mngr476324";
-	public static final String PASSWORD = "supYsYb";
-	
-	//Expected output/title
-	
-	public static final String EXPECTED_TITLE = "Guru99 Bank Manager HomePage";
-	
-	
+
+	public static String[][] getXLData( String xlSheetName) throws IOException 
+	{
+
+		File file = new File(System.getProperty("user.dir") + "\\excel\\data.xlsx");
+
+		FileInputStream fis = new FileInputStream(file);
+
+		Workbook wb = WorkbookFactory.create(fis);
+
+		Sheet sheetName = wb.getSheet(xlSheetName);
+
+		int totalRows = sheetName.getLastRowNum();
+
+		//System.out.println(totalRows);
+
+		Row rowCells = sheetName.getRow(0);
+
+		int totalCols = rowCells.getLastCellNum();
+
+		//System.out.println(totalCols);
+		
+		DataFormatter format = new DataFormatter();
+		
+		String testData[][] = new String[totalRows][totalCols];
+		
+		for(int i = 1; i <= totalRows; i++)  {
+			
+			for(int j = 0; j < totalCols; j++) {
+				
+			    testData[i-1][j] = format.formatCellValue(sheetName.getRow(i).getCell(j));
+			    
+			   // System.out.println(testData[i-1][j]);
+			}
+		}
+
+             return testData;
+	}	 
+
 }
