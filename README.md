@@ -32,11 +32,22 @@ The client has enhanced the test scenario to include more test cases
 One approach to automate this is to record separate script for all the above test cases. But this defeats the very purpose of automation.
  
 The best technique to automate the above test suite  is to parametrize the script.
- 
 The most famous tool store data for parametrization is MS Excel.
  
 Go ahead and create a script to read test-data from an Excel and execute Webdriver test cases.
  
 Regards
 Team Guru99
+
+## Day4: Introducing TestNG
+
+Hi,
+ 
+The client is happy with the work you have been doing so far, but he is not happy with the Test Results generated. The test results are not user friendly.
+He wants you to use TestNg which has better Test reporting format. 
+Go ahead and create the same script using TestNg.  
+Happy Testing
+Team Guru99
+
+
 
