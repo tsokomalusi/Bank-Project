@@ -4,12 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 
 import java.io.IOException;
-
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+
 
 public  class Util {
 
@@ -24,10 +24,11 @@ public  class Util {
 	public static final String USER_NAME = "mngr476324";
 	public static final String PASSWD = "supYsYb";
 	
+	
 
-	public static String[][] getXLData( String xlSheetName) throws IOException 
+	public static String[][] getXLData(String xlSheetName) throws IOException 
 	{
-
+     
 		File file = new File(System.getProperty("user.dir") + "\\excel\\data.xlsx");
 
 		FileInputStream fis = new FileInputStream(file);
