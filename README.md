@@ -58,7 +58,7 @@ The client now wants you to make 2 changes
 1.	 Instead of Excel he wants you to use Data Provider annotation of Testing
 2.	Post login , a message "Welcome <manager id> " is shown. The client wants you to validate this
 
-![test_scenario_v4]("https://github.com/tsokomalusi/Bank-Project/blob/master/resources/images/test_scenario_v4.png")
+![test_scenario_v4](https://github.com/tsokomalusi/Bank-Project/blob/master/resources/images/test_scenario_v4.png)
 
 But the text "Welcome <manager id> " is dynamic and will change from a userid to another. Time to do some pondering J Go ahead and code this
 
