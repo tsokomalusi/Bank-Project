@@ -65,7 +65,7 @@ But the text "Welcome <manager id> " is dynamic and will change from a userid to
 Happy coding
 Team Guru99
 
-## Day 5: Screenshots required
+## Day 6: Screenshots required
 
 Hi Fellow Tester,
 The client has made one more request. He needs screenshot of the output as below
