@@ -60,8 +60,7 @@ public class FinalScript {
 			// Get text displayes on login page
 
 			String path = "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[3]/td[1]";
-			String text = driver.findElement
-					(By.xpath(path)).getText();
+			String text = driver.findElement(By.xpath(path)).getText();
 
 			System.out.println(text);
 
