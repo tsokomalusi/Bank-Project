@@ -69,6 +69,13 @@ Team Guru99
 
 Hi Fellow Tester,
 The client has made one more request. He needs screenshot of the output as below
+ 
 ![screenshot](https://github.com/tsokomalusi/Bank-Project/blob/master/resources/images/screenshot.png)
+ 
+ Go ahead and make this change.
+ 
+Good luck!
+Team Guru99
+
 
 
