@@ -5,11 +5,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -18,7 +16,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
 import org.testng.annotations.AfterTest;
 
 public class FinalScript {
@@ -26,11 +23,7 @@ public class FinalScript {
 	public WebDriver driver;
 	public String baseUrl;
 
-
-
-	/*
-	 * data set of username and password for testing
-	 */
+	//data set of username and password for testing
 
 	@DataProvider(name = "credentials")
 	public Object[][] testData()  {
