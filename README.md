@@ -21,7 +21,7 @@ Go ahead and modify the script
 
 ![test_scenario_v2](https://github.com/tsokomalusi/Bank-Project/blob/master/resources/images/test_scenario_v2.png)
 
-## Day3: Parameterizing the Script
+## Day 3: Parameterizing the Script
 
 Hi Fellow Geek,
  
@@ -39,7 +39,7 @@ Go ahead and create a script to read test-data from an Excel and execute Webdriv
 Regards
 Team Guru99
 
-## Day4: Introducing TestNG
+## Day 4: Introducing TestNG
 
 Hi,
  
@@ -49,7 +49,7 @@ Go ahead and create the same script using TestNg.
 Happy Testing
 Team Guru99
 
-## Day5: Getting started with dynamic text
+## Day 5: Getting started with dynamic text
 
 Hey QA Ninja,
 
