@@ -77,5 +77,19 @@ The client has made one more request. He needs screenshot of the output as below
 Good luck!
 Team Guru99
 
+## Project Complete
+
+Thanks to team Guru99 and Krishna Rungta for this Selenium live automation project.
+
+Key takeaways from this project:
+- Code maintainability by means POM design pattern
+- Test case design
+- Enhancement of scripts
+- Parametrization using Excel
+- Data Driven Testing using TestNG test framework
+- Taking screenshots
+- Integrating Selenium with TestNG
+
+
 
 
